@@ -13,7 +13,6 @@ public class MyRegex
     public void setText(String text) 
     {
         this.text = text;
-        mat = patron.matcher(text);
     }
     public String getText() 
     {
@@ -23,9 +22,18 @@ public class MyRegex
     {
         this.regex = regex;
         patron = Pattern.compile(regex);
+        mat = patron.matcher(text);
     }
     public String getRegex() 
     {
         return regex;
+    }
+    public String Remplazar(String replace) 
+    {
+        return mat.replaceAll(replace);
+    }
+    public boolean Buscar(int inicio) 
+    {
+        return mat.find(inicio);
     }
 }
