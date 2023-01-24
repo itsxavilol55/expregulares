@@ -8,6 +8,7 @@ public class App
         MyRegex regex1 = new MyRegex();
         regex1.setText(text);
         regex1.setRegex(regex);
+        
         System.out.println(regex1.Remplazar("holaaaa"));
         System.out.println(regex1.Buscar(0));
     }
