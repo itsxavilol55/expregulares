@@ -11,5 +11,11 @@ public class App
         
         System.out.println(regex1.Remplazar("holaaaa"));
         System.out.println(regex1.Buscar(0));
+        
+        regex1.setText("[WARNING]:   \tTimezone not set  \r\n");
+        System.out.println(regex1.getText());
+        regex1.setRegex(": *(\\\\t)*[a-zA-Z ]*");
+        System.out.println(regex1.getRegex());
+        System.out.println(regex1.Regresar());
     }
 }

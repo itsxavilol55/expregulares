@@ -36,4 +36,7 @@ public class MyRegex
     {
         return mat.find(inicio);
     }
+    public String Regresar() {
+        return ""+mat.group();
+    }
 }
